@@ -8,17 +8,32 @@
   <link rel="stylesheet" href="style.css"
 </head>
 
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("navbar");
+    if (window.scrollY > 50) {  
+      navbar.classList.add("bg-white", "text-black", "shadow-md");
+      navbar.classList.remove("bg-transparent", "text-white");
+    } else {
+      navbar.classList.add("bg-transparent", "text-white");
+      navbar.classList.remove("bg-white", "text-black", "shadow-md");
+    }
+  });
+</script>
+
+
 <body class="">
-  <nav class="fixed top-0 left-0 w-full bg-gray-800 bg-opacity-0 hover:bg-white hover:text-black flex justify-center items-center font-bold space-x-12 p-4 z-50"> 
+  <nav id="navbar" class="fixed top-0 left-0 w-full bg-transparent text-white transition-all font-bold hover:bg-white duration-300 p-4 z-50">
+    <div class="flex justify-between items-center">
     <img class="h-20 w-25 object cover" src="/img/VSlogo_black_transp (1).png" alt=""> 
     <div class="flex space-x-4"></div>
-      <a href="" class="text-white hover:text-black uppercase">Planeeri</a>
-      <a href="" class="text-white hover:text-black uppercase">Avasta</a>
-      <a href="" class="text-white hover:text-black uppercase">Naudi</a>
-      <a href="" class="text-white hover:text-black uppercase">Viikingite saar</a>
-      <a href="" class="text-white hover:text-black uppercase">Info</a>
+      <a href="" class="text-black  uppercase">Planeeri</a>
+      <a href="" class="text-black  uppercase">Avasta</a>
+      <a href="" class="text-black  uppercase">Naudi</a>
+      <a href="" class="text-black  uppercase">Viikingite saar</a>
+      <a href="" class="text-black  uppercase">Info</a>
       <button id="inline-flex center"
-type="button" data-dropdown-toggle="dropdown" class="text-white hover:text-black">ET
+type="button" data-dropdown-toggle="dropdown" class="text-black">ET
 </button>
       <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4" id="dropdown">
         <div class="px-4 py-3"> 
@@ -37,11 +52,13 @@ type="button" data-dropdown-toggle="dropdown" class="text-white hover:text-black
         </ul>
       </div>
       <img src="https://openweathermap.org/img/w/01d.png" alt="">
-      <a>12.3</a>
+      <a href="" class="text-black">12.3</a>
         
     </div>
   </nav>
- 
+
+ <!-- cover photo -->
+
   <div class="relative flex items-center w-full h-[500px]">
     <img class="w-full h-full object-cover" src="https://visitsaaremaa.ee/wp-content/uploads/2020/05/majutuse-header-scaled.jpg" alt="" class="h-12 w-auto rounded-md">> 
     <div class="absolute w-full h-auto top-1/2 bottom-0 left-4 w-screen text-white text-outline text-2xl font-bold p-4">
