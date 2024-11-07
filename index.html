@@ -1,42 +1,42 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
-  <link rel="stylesheet" href="style.css"
-</head>
+  <link rel="stylesheet" href="style.css" </head>
 
-<script>
-  window.addEventListener("scroll", function () {
-    const navbar = document.getElementById("navbar");
-    if (window.scrollY > 50) {  
-      navbar.classList.add("bg-white", "text-black", "shadow-md");
-      navbar.classList.remove("bg-transparent", "text-white");
-    } else {
-      navbar.classList.add("bg-transparent", "text-white");
-      navbar.classList.remove("bg-white", "text-black", "shadow-md");
-    }
-  });
-</script>
+  <script>
+    window.addEventListener("scroll", function () {
+      const navbar = document.getElementById("navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("bg-white", "text-black", "shadow-md");
+        navbar.classList.remove("bg-transparent", "text-white");
+      } else {
+        navbar.classList.add("bg-transparent", "text-white");
+        navbar.classList.remove("bg-white", "text-black", "shadow-md");
+      }
+    });
+  </script>
 
 
 <body class="">
-  <nav id="navbar" class="fixed top-0 left-0 w-full bg-transparent text-white transition-all font-bold hover:bg-white duration-300 p-4 z-50">
+  <nav id="navbar"
+    class="fixed top-0 left-0 w-full bg-transparent text-white transition-all font-bold hover:bg-white duration-300 p-4 z-50">
     <div class="flex justify-between items-center">
-    <img class="h-20 w-25 object cover" src="/img/VSlogo_black_transp (1).png" alt=""> 
-    <div class="flex space-x-4"></div>
+      <img class="h-20 w-25 object cover" src="/img/VSlogo_black_transp (1).png" alt="">
+      <div class="flex space-x-4"></div>
       <a href="" class="text-black  uppercase">Planeeri</a>
       <a href="" class="text-black  uppercase">Avasta</a>
       <a href="" class="text-black  uppercase">Naudi</a>
       <a href="" class="text-black  uppercase">Viikingite saar</a>
       <a href="" class="text-black  uppercase">Info</a>
-      <button id="inline-flex center"
-type="button" data-dropdown-toggle="dropdown" class="text-black">ET
-</button>
+      <button id="inline-flex center" type="button" data-dropdown-toggle="dropdown" class="text-black">ET
+      </button>
       <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4" id="dropdown">
-        <div class="px-4 py-3"> 
+        <div class="px-4 py-3">
           <span class="block text-sm">ET</span>
         </div>
         <ul class="py-1" aria-labelledby="dropdown">
@@ -53,92 +53,105 @@ type="button" data-dropdown-toggle="dropdown" class="text-black">ET
       </div>
       <img src="https://openweathermap.org/img/w/01d.png" alt="">
       <a href="" class="text-black">12.3</a>
-        
+
     </div>
   </nav>
 
- <!-- cover photo -->
+  <!-- cover photo -->
 
   <div class="relative flex items-center w-full h-[500px]">
-    <img class="w-full h-full object-cover" src="https://visitsaaremaa.ee/wp-content/uploads/2020/05/majutuse-header-scaled.jpg" alt="" class="h-12 w-auto rounded-md">> 
+    <img class="w-full h-full object-cover"
+      src="https://visitsaaremaa.ee/wp-content/uploads/2020/05/majutuse-header-scaled.jpg" alt=""
+      class="h-12 w-auto rounded-md">>
     <div class="absolute w-full h-auto top-1/2 bottom-0 left-4 w-screen text-white text-outline text-2xl font-bold p-4">
       <p class="text-[48px]">Majutus</p>
       <div class="left-4 text-white text-xl font-semibold px-4 py-2">
-      <p class="text-[15px]">Vaata lisaks →</p>  
-      </div> 
-  </div>
-</div>
-
-<p class="left-4 text-5xl font-semibold text-gray-800 px-4 py-10 ml-24">Avasta Saaremaa</p>
-
-<div class="grid grid-cols-12 gap-4 p-4 mx-auto w-full max-w-6x">
-  <div class="col-span-5 col-start-2 relative text-center flex justify-center overflow-hidden h-[400px] rounded-lg">
-      <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125" src="https://visitsaaremaa.ee/wp-content/uploads/2024/05/N9A6631-copy-scaled.jpg" alt="">
-      <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
-          <p class="text-[48px]">Saarte kenad uued kohad</p>
+        <p class="text-[15px]">Vaata lisaks →</p>
       </div>
-  </div>
-  <div class="col-span-5 relative text-center flex justify-center overflow-hidden h-[400px] rounded-lg">
-      <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125" src="https://visitsaaremaa.ee/wp-content/uploads/2024/06/10_WRC_Acropolis_AL__487-scaled.jpg" alt="">
-      <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
-          <p class="text-[48px]">Kohalik soovitab selleks nädalaks</p>
-      </div>
+    </div>
   </div>
 
-  <div class="col-span-5 col-start-2 relative text-center flex justify-center overflow-hidden h-[400px] rounded-lg">
-      <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125" src="https://visitsaaremaa.ee/wp-content/uploads/2024/08/Vilsandi-lighthouse-Marko-Palm-copy-scaled.jpg" alt="">
-      <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
-          <p class="text-[48px]">Saaremaa ja väikesaared</p>
-      </div>
-  </div>
-  <div class="col-span-5 relative text-center flex justify-center overflow-hidden h-[400px] rounded-lg">
-      <img class="object-cover transition-transform duration-700 transform hover:scale-125" src="https://visitsaaremaa.ee/wp-content/uploads/2024/10/N9A6490-copy-scaled.jpg" alt="">
-      <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
-          <p class="text-[48px]">Saaremaa Terviseveed 200</p>
-      </div>
-  </div>
+  <p class="left-4 text-5xl font-semibold text-gray-800 px-4 py-10 ml-24">Avasta Saaremaa</p>
 
-  <div class="col-span-5 col-start-2 relative text-center flex justify-center overflow-hidden h-[400px] rounded-lg">
-      <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125" src="https://visitsaaremaa.ee/wp-content/uploads/2024/02/55A6905.jpg" alt="">
-      <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
-          <p class="text-[48px]">Saarte maitsed</p>
-      </div>
-  </div>
-  <div class="col-span-5 relative text-center flex justify-center overflow-hidden h-[400px] rounded-lg">
-      <img class="object-cover transition-transform duration-700 transform hover:scale-125" src="https://visitsaaremaa.ee/wp-content/uploads/2024/05/Folk-dancers-3-Kristina-Magi-copy-scaled.jpg" alt="">
-      <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
-          <p class="text-[48px]">Saarte sündmused</p>
-      </div>
-  </div>
+  <!-- columns -->
 
-  <div class="col-span-12 relative text-center justify-center overflow-hidden h-[400px] rounded-lg">
-      <img class="w-full rounded-lg duration-700 transform hover:scale-125" src="https://visitsaaremaa.ee/wp-content/uploads/2022/12/Liitu-visit-saaremaa-uudiskirjaga-scaled.jpg" alt="">
+  <div class="grid grid-cols-12 gap-4 p-4 mx-auto w-full max-w-6x">
+    <div class="col-span-5 col-start-2 relative text-center flex justify-center overflow-hidden h-[400px] rounded-lg">
+      <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125"
+        src="/img/columns/VSlogo_black_transp (1).jpg" alt="Kohalik soovitab">
+      <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+        <p class="text-[48px]"></p>
+      </div>
+    </div>
+    <div class="col-span-5 relative text-center flex justify-center overflow-hidden h-[400px] rounded-lg">
+      <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125"
+        src="/img/columns/Lenda-peale-Saaremaale-scaled.jpg" alt="Lenda peale">
+      <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+        <p class="text-[48px]">Lenda peale. Mitte üle.</p>
+      </div>
+    </div>
+
+    <div class="col-span-5 col-start-2 relative text-center flex justify-center overflow-hidden h-[400px] rounded-lg">
+      <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125"
+        src="/img/columns/N9A6631-copy-scaled.jpg" alt="Saarte kenad uued kohad">
+      <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+        <p class="text-[48px]">Saarte kenad uued kohad</p>
+      </div>
+    </div>
+    <div class="col-span-5 relative text-center flex justify-center overflow-hidden h-[400px] rounded-lg">
+      <img class="object-cover transition-transform duration-700 transform hover:scale-125"
+        src="/img/columns/55A8752-scaled.jpg" alt="Saaremaa terviseteed 200">
+      <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+        <p class="text-[48px]">Saaremaa Terviseveed 200</p>
+      </div>
+    </div>
+
+    <div class="col-span-5 col-start-2 relative text-center flex justify-center overflow-hidden h-[400px] rounded-lg">
+      <img class="object-cover rounded-lg transition-transform duration-700 transform hover:scale-125"
+        src="img/columns/55A6905.jpg" alt="Saarte maitsed">
+      <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+        <p class="text-[48px]">Saarte maitsed</p>
+      </div>
+    </div>
+    <div class="col-span-5 relative text-center flex justify-center overflow-hidden h-[400px] rounded-lg">
+      <img class="object-cover transition-transform duration-700 transform hover:scale-125"
+        src="img/columns/Folk-dancers-3-Kristina-Magi-copy-scaled.jpg" alt="Sündmused">
+      <div class="absolute w-full bottom-0 mb-10 left-0 text-white">
+        <p class="text-[48px]">Saarte sündmused</p>
+      </div>
+    </div>
+
+    <div class="col-span-12 relative text-center justify-center overflow-hidden h-[400px] rounded-lg">
+      <img class="w-full rounded-lg duration-700 transform hover:scale-125"
+        src="https://visitsaaremaa.ee/wp-content/uploads/2022/12/Liitu-visit-saaremaa-uudiskirjaga-scaled.jpg" alt="">
       <div class="absolute inset-0 bg-gray-800 bg-opacity-50 pointer-events-none"></div>
       <div class="absolute bottom-4 mb-10 left-4 text-white">
         <p class="text-[28px]">Liitu uudiskirjaga</p>
-    </div>
-      <div class="absolute inset-0 flex flex-col items-center justify-center space-y-2 pointer-events-none text-white">
-<label for="name-input" class="text-white text-lg font-semibold">Sinu nimi</label>
-        <input id="name-input" type="text" 
-               class="w-80 bg-white px-4 py-2 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 shadow-md">
-               <label for="name-input" class="text-white text-lg font-semibold">Sinu e-mail</label>
-        <input id="name-input" type="text" 
-               class="w-80 bg-white px-4 py-2 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 shadow-md">
-               <div class="flex items-center space-x-2 mt-2 p-4">
-                <input type="checkbox" id="agree-checkbox" class="w-5 h-5 text-blue-500 focus:ring-blue-500 border-gray-300 rounded">
-                <label for="agree-checkbox" class="text-white">Olen tutvnud andmetöötluse põhimõtetega.</label>
-               </div>
-               <button class="bg-pink-600 text-white font-semibold py-2 px-6 rounded-lg">
-                Liitu uudiskirjaga
-            </button>
-            <div class="absolute bottom-0 mb-10 left-0 relative text-center text-white">
-              <p class="text-xs">Uudiskirjast saad häid ideid ja vihjeid, kuidas planeerida oma järgmine saarepuhkus. <br /> 
-                Kirjutame, mida uut ja põnevat meitel on, mida siinsetel saartel teha ja läkitame teele meie ettevõtete parimad pakkumised.</p>
-            </div>    
-    </div>
       </div>
+      <div class="absolute inset-0 flex flex-col items-center justify-center space-y-2 pointer-events-none text-white">
+        <label for="name-input" class="text-white text-lg font-semibold">Sinu nimi</label>
+        <input id="name-input" type="text"
+          class="w-80 bg-white px-4 py-2 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 shadow-md">
+        <label for="name-input" class="text-white text-lg font-semibold">Sinu e-mail</label>
+        <input id="name-input" type="text"
+          class="w-80 bg-white px-4 py-2 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 shadow-md">
+        <div class="flex items-center space-x-2 mt-2 p-4">
+          <input type="checkbox" id="agree-checkbox"
+            class="w-5 h-5 text-blue-500 focus:ring-blue-500 border-gray-300 rounded">
+          <label for="agree-checkbox" class="text-white">Olen tutvnud andmetöötluse põhimõtetega.</label>
+        </div>
+        <button class="bg-pink-600 text-white font-semibold py-2 px-6 rounded-lg">
+          Liitu uudiskirjaga
+        </button>
+        <div class="absolute bottom-0 mb-10 left-0 relative text-center text-white">
+          <p class="text-xs">Uudiskirjast saad häid ideid ja vihjeid, kuidas planeerida oma järgmine saarepuhkus. <br />
+            Kirjutame, mida uut ja põnevat meitel on, mida siinsetel saartel teha ja läkitame teele meie ettevõtete
+            parimad pakkumised.</p>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+  </div>
+</body>
 
-
-
+</html>
